@@ -15,7 +15,7 @@ function ProductList() {
         setAddedToCart((prevState) => ({
             ...prevState,
             [product.name]: true, //Pone el nombre como clave y el valor como true para indicar que se ha añadido al carrito 
-        }))
+        }));
     }
 
     const plantsArray = [
@@ -256,8 +256,8 @@ function ProductList() {
     };
 
     const handleContinueShopping = (e) => {
-        e.preventDefault();
         setShowCart(false);
+        setShowPlants(true);
     };
     return (
         <div>
